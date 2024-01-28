@@ -6,21 +6,38 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 5vw;
     font-family:'Honk';
 }
 
 .flex-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     flex-direction: row;
+    justify-content: space-around;
+}
 
-.flex-item{
+.flex-item {
     background-color:rgb(166, 34, 178) ;
     border-style: solid;
     border-radius: 15px;
-    padding: 25px;
-    font-size: 15px;
-    letter-spacing: 10px;
+    padding: 15px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body{
+        background-color: blanchedalmond;
+    }
 }
